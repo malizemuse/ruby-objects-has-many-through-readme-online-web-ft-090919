@@ -14,14 +14,18 @@ class Waiter
     @@all
   end 
   
+<<<<<<< HEAD
   def meals 
     Meal.all.select { |meal| meal.waiter == self }
   end 
   
+=======
+>>>>>>> a41fca8d1c6e282d4770c6b6d77d13469f1b4f25
   def new_meal(customer, total, tip=0)
     Meal.new(self, customer, total, tip)
   end 
   
+<<<<<<< HEAD
   def best_tipper
     
     best_tipped_meal = meals.max do |meal_a, meal_b|
@@ -33,6 +37,8 @@ class Waiter
   end 
   
   
+=======
+>>>>>>> a41fca8d1c6e282d4770c6b6d77d13469f1b4f25
   
 end 
 

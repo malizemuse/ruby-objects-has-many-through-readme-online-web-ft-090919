@@ -19,6 +19,7 @@ class Customer
   end 
   
   def meals
+<<<<<<< HEAD
     Meal.all.select { |meal| meal.customer == self }
   end 
   
@@ -28,6 +29,11 @@ class Customer
   
   
     
+=======
+    Meal.all.select { |meal| meal.customer == self}
+  end 
+  
+>>>>>>> a41fca8d1c6e282d4770c6b6d77d13469f1b4f25
 end 
 
 
